@@ -3,13 +3,20 @@ public class Example3
 {
 	public void findMinimum(int a[])
 	{
-		int min=a[0];
+		int temp=0;
 		for(int i=0;i<a.length;i++)
 		{
-			if(a[i]<a[0])
-				min=a[i];
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(a[i]>a[j])
+				{
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}	
+			}
 		}
-		System.out.println("Minimum number is:"+min);
+		System.out.println(a[1]+" ");
 	}
 
 	public static void main(String[] args) 

@@ -6,7 +6,7 @@ public class Example1
 	public void findMaximum(int a[])
 	{
 		int max=a[0];
-		for(int i=1;i<a.length;i++)
+		for(int i=0;i<a.length;i++)
 		{
 			if(a[i]>a[0])
 				max=a[i];
@@ -23,7 +23,7 @@ public class Example1
 		int size=sc.nextInt();
 		int a[]=new int [size];
 		System.out.println("Enter the elements of array");
-		for(int i=0;i<size;i++)
+		for(int i=0;i<a.length;i++)
 		{
 			a[i]=sc.nextInt();
 		}
